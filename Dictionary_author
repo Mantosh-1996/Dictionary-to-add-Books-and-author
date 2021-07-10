@@ -1,0 +1,39 @@
+print (""" Please choose option from below
+Choose 1 : ADD BOOK INFORMATION
+Choose 2 : DISPLAY BOOK INFORMATION
+Choose 3 : LIST ALL BOOKS OF GIVEN AUTHOR
+Choose 4 : LIST THE COUNT OF BOOKS IN THE LIBRARY
+Choose 5 : EXIT
+""")
+
+
+n= int(input("enter your response"))
+
+
+if (n==1):
+    y= int(input("enter how many books you want to add"))
+    
+    for i in range(1,y+1):
+        a= input("enter book name")
+        b= input('enter the author name')
+        q= {a:b}
+        z.update(q)
+        
+elif (n==2):
+    print(z)
+
+elif (n==3):
+    temp= input('enter the author name you wanna search')
+    book_title = dict(filter (lambda x: temp, z.items() ))
+    book_title
+    
+    
+elif (n==4):
+     print("number of books in the library are ", len(z))
+        
+        
+
+else:
+    print("option 5 or wrong option choosen")
+    sys.exit()
+    
